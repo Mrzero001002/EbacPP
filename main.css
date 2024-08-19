@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.container{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgb(177, 177, 177);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(58, 58, 58), goldenrod);
+    color: rgb(255, 255, 255);
+    text-decoration: solid;
+    border-bottom: 1px solid black;
+    margin-bottom: 26px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu > li{
+    float: left;
+    list-style: none;
+    padding: 12px;
+    cursor: default;
+}
+
+section{
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+.container-flex h2{
+    padding: 4px;
+    border-bottom: 1px solid goldenrod;
+    font-size: 2em;
+}
+
+.container-flex img{
+    width: 320px;
+    margin-left: 16px;
+    border: 4px solid black;
+}
+
+.container-flex h2,
+.container-flex p{
+    margin-left: 16px;
+}
+
+.container-flex p{
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.Produtos{
+    font-size: 2em;
+    border-bottom: 1px solid goldenrod;
+    font-style: italic;
+}
+
+.ListaP ul{
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
+    list-style: none;
+}
+
+li h3{
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+
+li p{
+    font-size: 8px;
+}
+
+li .preço{
+    text-align: center;
+    text-decoration: underline;
+}
+
+article button {
+    width: 40%;
+    padding: 3px;
+    margin-left: 130px;
+    border-radius: 8PX;
+    background-color: rgb(145, 145, 224);
+    color: black solid;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(58, 58, 58), goldenrod);
+    color: rgb(255, 255, 255);
+    text-decoration: solid;
+    font-size: 2em;
+    font-style: italic;
+    border-top: 2px solid black;
+}
+
+.cont{
+    display: flex;
+}
+
+.cont img{
+    max-width: 100%;
+    height: 60px;
+    padding-left: 26px;
+}
+
+#faceLogo{
+    padding-right: 20px;
+}
+
+.rodape{
+    font-size: 16px;
+    margin-top: 75px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .container-flex{
+        display: block;
+    }
+
+    .container-flex p{
+        font-size: 16px;
+    }
+
+    .ListaP ul{
+        display: block;
+    }
+
+    article button{
+        margin-left: 105px;
+    }
+
+    .footer{
+        display: block;
+        font-size: 12px;
+    }
+
+    .rodape{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    
+    .container{
+        width: 100%;
+    }
+
+    .container-flex{
+        display: block;
+    }
+
+    .ListaP ul{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .footer{
+        display: block;
+        font-size: 26px;
+        margin-top: 80px;
+    }
+
+    .rodape{
+        margin-top: 16px;
+    }
+}
